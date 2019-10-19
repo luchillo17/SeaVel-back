@@ -6,10 +6,10 @@ const app = express();
 const port = 3000;
 
 app.get('/', async (req, res) => {
-  const { lon, lat, city, date, freq } = req.params;
+  const { lon, lat, city, date, freq } = req.query;
 
   return res.json(
-    SeaVel({
+    await SeaVel({
       lon,
       lat,
       city,

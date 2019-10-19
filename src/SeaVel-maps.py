@@ -1,39 +1,35 @@
 #!/usr/bin/env python
-# coding: utf-8
-
-# In[8]:
-
-
 import numpy as np
 import pandas as pd
 
-arr = np.array([[1,2,3],[1,2,3],[1,2,3]])
+import sys, json
 
-jsonResult = pd.DataFrame(arr).to_json(orient='values')
+if len(sys.argv) <= 1:
+    raise Exception('Invalid arguments')
 
-print(jsonResult)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
+"""
+jsonParams should receive a dict with following structure:
+{
+    lon: number,
+    lat: number,
+    date: timestamp (still to be defined)
+    freq: number (integer between 1 - 4)
+    city: string? (still to be defined)
+} 
+"""
+jsonParams = json.loads(sys.argv[1])
 
 
+# --------------- Code Start --------------- 
 
+jsonResult = {
+    'enso': 'asdf',
+    'seaLevel': 15,
+    'globalTemp': 33,
+    'fileName': 'asdf.jpg'
+}
 
+# --------------- Code ends --------------- 
 
-# In[ ]:
-
-
-
+print(json.dumps(jsonResult))
 

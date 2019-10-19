@@ -33,14 +33,9 @@ module.exports = {
           }
 
           try {
-            const { ENSO, seaLevel, globalTemp, fileName } = JSON.parse(output);
+            const result = JSON.parse(output);
 
-            resolve({
-              enso: ENSO,
-              seaLevel,
-              globalTemp,
-              fileName
-            });
+            resolve(result);
           } catch (error) {
             reject(error);
           }
