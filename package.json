@@ -1,0 +1,25 @@
+{
+  "name": "seavel-back",
+  "version": "1.0.0",
+  "description": "Communicating the impacts of rising oceans.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luchillo17/SeaVel-back.git"
+  },
+  "keywords": [
+    "rising",
+    "oceans",
+    "risk",
+    "impacts"
+  ],
+  "author": "Carlos Lopez (luchillo17@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luchillo17/SeaVel-back/issues"
+  },
+  "homepage": "https://github.com/luchillo17/SeaVel-back#readme"
+}
