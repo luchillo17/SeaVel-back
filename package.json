@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Communicating the impacts of rising oceans.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/luchillo17/SeaVel-back/issues"
   },
-  "homepage": "https://github.com/luchillo17/SeaVel-back#readme"
+  "homepage": "https://github.com/luchillo17/SeaVel-back#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "python-shell": "^1.0.8"
+  }
 }
